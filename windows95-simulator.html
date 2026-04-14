@@ -770,6 +770,12 @@
                                 <button class="calc-button" data-action="sqrt">√</button>
                                 <button class="calc-button" data-action="power">x^y</button>
                                 <button class="calc-button" data-action="pi">π</button>
+                                <button class="calc-button" data-action="tau">π</button>
+                                <button class="calc-button" data-action="pi2">π^2</button>
+                                <button class="calc-button" data-action="pi3">π^3</button>
+                                <button class="calc-button" data-action="pi4">π^4</button>
+                                <button class="calc-button" data-action="pi5">π^5</button>
+    
                             </div>
                         </div>
                         <div class="calculator-buttons">
@@ -827,6 +833,34 @@
                     { icon: '💾', name: '3½ Floppy (A:)' },
                     { icon: '💿', name: 'CD-ROM (D:)' },
                     { icon: '🖥️', name: 'Hard Disk (C:)' },
+                    { icon: '🖥️', name: 'Hard Disk (D:)' },
+                    { icon: '🖥️', name: 'Hard Disk (E:)' },
+                    { icon: '🖥️', name: 'Hard Disk (F:)' },
+                    { icon: '💿', name: 'CD-ROM (G:)' },
+                    { icon: '🖥️', name: 'Hard Disk (H:)' },
+                    { icon: '🖥️', name: 'Hard Disk (I:)' },
+                    { icon: '🖥️', name: 'Hard Disk (J:)' },
+                    { icon: '🖥️', name: 'Hard Disk (K:)' },
+                    { icon: '💿', name: 'CD-ROM (L:)' },
+                    { icon: '🖥️', name: 'Hard Disk (M:)' },
+                    { icon: '🖥️', name: 'Hard Disk (N:)' },
+                    { icon: '🖥️', name: 'Hard Disk (O:)' },
+                    { icon: '🖥️', name: 'Hard Disk (P:)' },
+                    { icon: '💿', name: 'CD-ROM (Q:)' },
+                    { icon: '🖥️', name: 'Hard Disk (R:)' },
+                    { icon: '🖥️', name: 'Hard Disk (S:)' },
+                    { icon: '🖥️', name: 'Hard Disk (T:)' },
+                    { icon: '🖥️', name: 'Hard Disk (U:)' },
+                    { icon: '💿', name: 'CD-ROM (D:)' },
+                    { icon: '🖥️', name: 'Hard Disk (C:)' },
+                    { icon: '🖥️', name: 'Hard Disk (D:)' },
+                    { icon: '🖥️', name: 'Hard Disk (E:)' },
+                    { icon: '🖥️', name: 'Hard Disk (F:)' },
+                    { icon: '💿', name: 'CD-ROM (D:)' },
+                    { icon: '🖥️', name: 'Hard Disk (C:)' },
+                    { icon: '🖥️', name: 'Hard Disk (D:)' },
+                    { icon: '🖥️', name: 'Hard Disk (E:)' },
+                    { icon: '🖥️', name: 'Hard Disk (F:)' },
                     { icon: '🗂️', name: 'Control Panel' },
                     { icon: '📁', name: 'My Documents' },
                     { icon: '🖨️', name: 'Printers' }
@@ -912,9 +946,10 @@
                             `CLS     - Clears the screen\n` +
                             `TIME    - Displays current time\n` +
                             `DATE    - Displays current date\n` +
+                            `CHKDSK   - Checks the disk\n` +
                             `HELP    - Shows this help message`;
                 } else if (command) {
-                    output = `'${command}' is not recognized as an internal or external command,\noperable program or batch file.`;
+                    output = `'${command}' Can't recognized as an internal or external command,\noperable program or batch file.`;
                 }
                 
                 if (output) {
